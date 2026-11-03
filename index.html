@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Practical AI Starter Hub | Rahul (@imsikarwar.rahul)</title>
+<meta name="description" content="Free, honest starter kit for using AI at work: a 30-day beginner path, tested prompts with what to check, checklists, and careful guidance for people working in Europe. By a senior engineer.">
+<style>
+@font-face{font-family:Serif;src:url(InstrumentSerif-Italic.ttf)}
+:root{--bg:#0B1730;--card:#13244A;--line:#26385F;--text:#EAF0FB;--mute:#A9B8D4;--teal:#2DD4BF;--vio:#8B5CF6;--warn:#FCD34D}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--teal)}.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;background:rgba(11,23,48,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 20px;white-space:nowrap}
+nav a{color:var(--mute);text-decoration:none;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--line)}
+nav a:hover{color:var(--text);border-color:var(--teal)}
+header.hero{padding:56px 0 34px;background:radial-gradient(900px 400px at 85% -10%,rgba(45,212,191,.22),transparent),radial-gradient(700px 400px at -10% 110%,rgba(139,92,246,.28),transparent)}
+.kick{color:var(--teal);letter-spacing:3px;font-size:13px;font-weight:700;text-transform:uppercase}
+h1{font-size:clamp(34px,6.5vw,56px);line-height:1.08;margin:12px 0 14px}h1 em,h2 em{font-family:Serif;font-weight:400;color:var(--teal)}
+.lead{font-size:19px;color:#CFDAF0;max-width:640px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{display:inline-block;background:var(--teal);color:#06231F;font-weight:700;text-decoration:none;padding:12px 20px;border-radius:12px}
+.btn.alt{background:transparent;color:var(--text);border:1px solid var(--line)}
+section{padding:42px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(26px,4.6vw,36px);margin:0 0 6px}h3{margin:0 0 6px;font-size:20px}
+.sub{color:var(--mute);margin:0 0 22px}
+.grid{display:grid;gap:14px}.g2{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.num{font:700 13px/1 inherit;color:var(--vio);background:#E9E3FF;display:inline-block;padding:4px 9px;border-radius:999px;margin-bottom:8px}
+.badge{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;margin-left:6px;vertical-align:middle}
+.b-test{background:#14532D;color:#BBF7D0}.b-tmpl{background:#3F3F46;color:#E4E4E7}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:10px 0;padding:0 18px}
+summary{cursor:pointer;padding:14px 0;font-weight:600;list-style:none}summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--teal);font-size:22px;line-height:1}details[open] summary::after{content:"–"}
+pre{white-space:pre-wrap;background:#0A1530;border:1px solid var(--line);border-radius:10px;padding:14px;font:14.5px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:#DCE6F8;margin:6px 0 10px}
+.copy{background:var(--vio);color:#fff;border:0;border-radius:9px;padding:8px 14px;font-weight:600;cursor:pointer}
+.check{color:var(--mute);font-size:15px;margin:2px 0 14px}.check b{color:var(--warn)}
+table{width:100%;border-collapse:collapse;font-size:15px}th,td{border-bottom:1px solid var(--line);padding:9px 8px;text-align:left;vertical-align:top}th{color:var(--mute);font-weight:600}
+.note{border-left:4px solid var(--warn);background:#2A2410;padding:12px 16px;border-radius:8px;color:#FDE9A8;font-size:15.5px}
+ul.tight{margin:6px 0 0;padding-left:20px}ul.tight li{margin:4px 0}
+dl{margin:0}dt{font-weight:700;margin-top:12px}dd{margin:2px 0 0;color:#CFDAF0}
+footer{padding:34px 0 60px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+@media(max-width:560px){body{font-size:16.5px}.btn{width:100%;text-align:center}}
+</style></head><body>
+<nav><div class="wrap"><a href="#start">Start here</a><a href="#prompts">Prompts</a><a href="#checks">Checklists</a><a href="#work">AI at work</a><a href="#words">Plain words</a><a href="#log">What I tested</a><a href="#about">About</a></div></nav>
+<header class="hero"><div class="wrap">
+<div class="kick">Practical AI &middot; free &middot; no sign-up</div>
+<h1>Use AI at work, <em>and check it</em>.</h1>
+<p class="lead">A starter kit from a senior engineer: a 30-day path for beginners, prompts with a note on what to check, and checklists you can use today. No hype, no &ldquo;10x&rdquo; promises, and nothing here claims AI is always right.</p>
+<div class="btns"><a class="btn" href="#start">Start the 30-day path</a><a class="btn alt" href="#prompts">Jump to the prompts</a></div>
+</div></header>
+
+<section id="start"><div class="wrap">
+<h2>Start here: <em>6 things, in this order</em></h2>
+<p class="sub">About 15 minutes a day. Use made-up or anonymised material until you trust your process.</p>
+<div class="grid g2">
+<div class="card"><span class="num">1</span><h3>Learn to ask</h3><p>Give a role, the context, the task and the format you want. &ldquo;Summarize this&rdquo; gets weaker answers than &ldquo;From these notes, list decisions and next steps in a table.&rdquo;</p></div>
+<div class="card"><span class="num">2</span><h3>Learn to check</h3><p>AI can sound sure and still be wrong. Spot-check names, numbers and dates against your source. Ask it what it is unsure about.</p></div>
+<div class="card"><span class="num">3</span><h3>Pick 3 everyday tasks</h3><p>Summarise, draft, organise. Choose things you already do weekly and compare the AI version with your own.</p></div>
+<div class="card"><span class="num">4</span><h3>Use your own material</h3><p>Notes, documents, emails, with names and private details removed. Answers based on your own text are easier to verify.</p></div>
+<div class="card"><span class="num">5</span><h3>Make it a routine</h3><p>Save the prompt that worked, add a short checklist, reuse it. A repeatable workflow beats a clever one-off.</p></div>
+<div class="card"><span class="num">6</span><h3>Then try agents</h3><p>An agent is AI that takes several steps with tools for you. Start small, keep a human approval step and review what it actually did.</p></div>
+</div>
+<h3 style="margin-top:28px">The 30-day plan</h3>
+<table><tr><th>Week</th><th>Do (about 15 min/day)</th><th>You are done when</th></tr>
+<tr><td>1</td><td>Steps 1&ndash;2. Ask the same question vaguely, then with context. Always spot-check one fact.</td><td>You can explain why the second answer was better and what was still wrong.</td></tr>
+<tr><td>2</td><td>Step 3. Run your 3 tasks on made-up material and compare with your own version.</td><td>You know which task AI helps with and which it does not.</td></tr>
+<tr><td>3</td><td>Step 4. Repeat one task on your own anonymised notes. Check every row against the source.</td><td>You catch at least one error or gap and can say how.</td></tr>
+<tr><td>4</td><td>Steps 5&ndash;6. Save one prompt plus checklist. Try one small multi-step task with a human approval point.</td><td>You have a routine you would give a colleague.</td></tr></table>
+<p><a class="btn alt" href="ai-starter-30-day-plan.pdf">Download the 30-day plan (PDF)</a></p>
+</div></section>
+
+<section id="prompts"><div class="wrap">
+<h2>Prompts <em>with a check</em></h2>
+<p class="sub">Tap a prompt, copy it, replace the [brackets]. A green badge means I ran it myself; &ldquo;Template&rdquo; means it is a pattern to try on your own non-sensitive text.</p>
+
+<details><summary>Meeting notes to tasks <span class="badge b-test">Tested</span></summary>
+<pre id="p1">Turn these meeting notes into a table:
+Task | Owner | Deadline | Missing information
+
+Use only the facts provided. Write "Not specified" for missing owners or deadlines. Do not invent details. Distinguish completed items from open actions. Finish with the questions we need to resolve.
+
+Notes:
+[paste your notes with names and private details removed]</pre>
+<button class="copy" data-t="p1">Copy prompt</button>
+<p class="check"><b>Check:</b> Compare every row with your notes, look for invented details, turn &ldquo;Thursday&rdquo; into a real date yourself. I ran this once in ChatGPT (Instant mode, 31 Oct 2026) on fictional notes; one test is not proof it always works. <a href="meeting-notes-checklist.pdf">One-page checklist (PDF)</a>.</p></details>
+
+<details><summary>Ask me questions first <span class="badge b-tmpl">Template</span></summary>
+<pre id="p2">I want help with: [task].
+Before you answer, ask me up to three questions you need to do this well. Wait for my answers, then give your response.</pre>
+<button class="copy" data-t="p2">Copy prompt</button>
+<p class="check"><b>Check:</b> Were the questions actually useful? If not, say what is missing and rerun.</p></details>
+
+<details><summary>Facts, inferences and unknowns <span class="badge b-tmpl">Template</span></summary>
+<pre id="p3">Read the text below. List every important statement under three headings: Fact (stated in the text), Inference (your reasoning from the text), Unknown (not in the text). Do not add outside information.
+
+Text:
+[paste text]</pre>
+<button class="copy" data-t="p3">Copy prompt</button>
+<p class="check"><b>Check:</b> Look for anything under &ldquo;Fact&rdquo; that is not literally in your text.</p></details>
+
+<details><summary>Explain it simply, and tell me what you are unsure about <span class="badge b-tmpl">Template</span></summary>
+<pre id="p4">Explain [topic] to someone with no background. Use short sentences, define any technical term, and give one everyday example. At the end, list what you are unsure about and what I should verify elsewhere.</pre>
+<button class="copy" data-t="p4">Copy prompt</button>
+<p class="check"><b>Check:</b> Verify any number, date or claim you plan to rely on with a primary source.</p></details>
+
+<details><summary>Compare options <span class="badge b-tmpl">Template</span></summary>
+<pre id="p5">Compare [option A] and [option B] for [my situation]. Use a table with these criteria: [criteria]. Mark any cell where you are not sure. Then list what I should verify before deciding.</pre>
+<button class="copy" data-t="p5">Copy prompt</button>
+<p class="check"><b>Check:</b> Prices, versions and features change; confirm on the official pages.</p></details>
+
+<details><summary>Draft in my voice <span class="badge b-tmpl">Template</span></summary>
+<pre id="p6">Here is a sample of how I write:
+[paste 1&ndash;2 short paragraphs you wrote]
+
+Write a [email/message] about [topic] in the same tone. Keep it under [number] words. Do not add facts I did not give you.</pre>
+<button class="copy" data-t="p6">Copy prompt</button>
+<p class="check"><b>Check:</b> Read it aloud. Remove anything that sounds like you would not say it, and anything you did not tell it.</p></details>
+
+<details><summary>Say no politely and clearly <span class="badge b-tmpl">Template</span></summary>
+<pre id="p7">Someone asked me to [request]. I cannot do it because [reason]. Write a short, polite reply that says no clearly, does not over-apologise, and offers [alternative, or "no alternative"].</pre>
+<button class="copy" data-t="p7">Copy prompt</button>
+<p class="check"><b>Check:</b> Does it say what you mean, and nothing you did not mean?</p></details>
+
+<details><summary>Be my editor, do not rewrite <span class="badge b-tmpl">Template</span></summary>
+<pre id="p8">Act as a careful editor. Review the draft below and list specific problems: unclear sentences, missing information, tone issues. Quote the sentence for each problem and explain why. Do not rewrite the draft.
+
+Draft:
+[paste draft]</pre>
+<button class="copy" data-t="p8">Copy prompt</button>
+<p class="check"><b>Check:</b> Decide yourself which suggestions to accept.</p></details>
+
+<details><summary>Summarise a long text into 3 points <span class="badge b-tmpl">Template</span></summary>
+<pre id="p9">Summarise the text below in three bullet points. Keep all numbers and dates exactly as written. Add one line: "What this does not say."
+
+Text:
+[paste text]</pre>
+<button class="copy" data-t="p9">Copy prompt</button>
+<p class="check"><b>Check:</b> Compare each number and date with the original.</p></details>
+
+<details><summary>Decision brief <span class="badge b-tmpl">Template</span></summary>
+<pre id="p10">I must decide: [decision]. Facts I know: [facts]. Write a one-page brief: the options, the main risks of each, what we do not know yet, and what information would change the decision. Do not invent facts.</pre>
+<button class="copy" data-t="p10">Copy prompt</button>
+<p class="check"><b>Check:</b> Any fact in the brief that I did not provide is an error to remove.</p></details>
+</div></section>
+
+<section id="checks"><div class="wrap">
+<h2>Checklists <em>you can reuse</em></h2>
+<div class="grid g2">
+<div class="card"><h3>Check any AI answer in 3 passes</h3><ul class="tight"><li><b>Accuracy:</b> names, numbers, dates against the source.</li><li><b>Completeness:</b> what is missing, who is not mentioned.</li><li><b>Usability:</b> could someone act on this tomorrow?</li></ul><p><a href="three-pass-check.pdf">One-page PDF</a></p></div>
+<div class="card"><h3>Before you paste anything</h3><ul class="tight"><li>No passwords, keys or tokens.</li><li>No client or customer data, no health or financial data.</li><li>No names or details of colleagues unless your policy allows it.</li><li>Check your company&rsquo;s AI policy first. If unsure, ask.</li></ul></div>
+<div class="card"><h3>Meeting notes to tasks</h3><p>Seven checks to run on every AI-made table before you share it.</p><p><a href="meeting-notes-checklist.pdf">One-page PDF</a></p></div>
+</div></div></section>
+
+<section id="work"><div class="wrap">
+<h2>AI at work, <em>carefully</em> (Germany &amp; Europe)</h2>
+<p class="note"><b>Not legal advice.</b> Rules and tools differ by employer and change over time. This page is general information from a software engineer, not a lawyer.</p>
+<ul class="tight" style="margin-top:14px">
+<li><b>Policy first.</b> Read your employer&rsquo;s AI policy and use approved tools. If there is none, ask before pasting work material into a public AI tool.</li>
+<li><b>Data.</b> Do not paste personal data, client data, secrets or confidential code unless your organisation has approved that tool and use.</li>
+<li><b>Removing names is not anonymising.</b> Context (roles, projects, dates) can still identify people. Treat &ldquo;names removed&rdquo; as lower risk, not safe.</li>
+<li><b>You stay responsible.</b> Check AI output before you rely on it or send it on.</li>
+</ul>
+<p>Primary sources to read (check for newer versions):</p>
+<ul class="tight">
+<li><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">European Commission: AI Act</a>. Official page for the EU AI Act, including how its rules phase in.</li>
+<li><a href="https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/KI/Generative_AI_Models.pdf">BSI: Generative AI Models, opportunities and risks</a> (German Federal Office for Information Security, version dated 21 Jan 2025).</li>
+<li><a href="https://www.edpb.europa.eu/system/files/2024-12/edpb_opinion_202428_ai-models_en.pdf">EDPB Opinion 28/2024</a> on personal data and AI models (17 Dec 2024).</li>
+</ul></div></section>
+
+<section id="words"><div class="wrap">
+<h2>AI in <em>plain words</em></h2>
+<dl>
+<dt>Prompt</dt><dd>What you type to the AI: your question or instructions.</dd>
+<dt>Hallucination</dt><dd>When AI states something wrong or made-up in a confident way. It can happen with any current tool, so you check.</dd>
+<dt>Context</dt><dd>The information you give the AI for a task. More relevant context usually means a more useful answer.</dd>
+<dt>Agent</dt><dd>AI that takes several steps using tools (for example search, files, email) toward a goal, instead of one reply. Keep a human approval step.</dd>
+<dt>Anonymised vs. names removed</dt><dd>Anonymised means a person can no longer be identified by any reasonable means. Removing names alone often does not reach that.</dd>
+<dt>Source</dt><dd>Where a fact comes from. A good answer lets you trace each fact to one.</dd>
+</dl></div></section>
+
+<section id="log"><div class="wrap">
+<h2>What I have <em>tested</em></h2>
+<p class="sub">Real runs only, with the tool and date. I add a row each time I run an experiment in my 100-day series.</p>
+<table><tr><th>Date</th><th>Task</th><th>Tool</th><th>What happened</th></tr>
+<tr><td>31 Oct 2026</td><td>Meeting notes to tasks table</td><td>ChatGPT (Instant; model version not recorded)</td><td>Table with 1 completed item, 2 open actions, 1 blocked task, 1 scheduled check-in; missing owners and deadlines marked &ldquo;Not specified&rdquo;; questions listed. Fictional notes, one run.</td></tr></table>
+<p><a href="https://www.instagram.com/imsikarwar.rahul/">Follow the daily tests on Instagram</a></p>
+</div></section>
+
+<section id="about"><div class="wrap">
+<h2>About <em>me</em></h2>
+<p>I am Rahul, a senior engineer with 10+ years in software, based in Germany. I build agentic AI workflows and I am testing everyday AI tasks in public for 100 days: what works, what fails, and what you need to check. Everything on this page is free.</p>
+<p>What I will not do: promise results, claim AI is always right, or show results I did not get.</p>
+<p><a class="btn" href="https://www.instagram.com/imsikarwar.rahul/">@imsikarwar.rahul on Instagram</a></p>
+</div></section>
+<footer><div class="wrap">Last updated 3 Nov 2026. General information, not legal, financial or professional advice. The prompts are templates: results vary by tool and over time, so always check the output. No tracking or sign-up on this page.</div></footer>
+<script>document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{const t=document.getElementById(b.dataset.t).innerText;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy prompt',1500)}).catch(()=>{const r=document.createRange();r.selectNodeContents(document.getElementById(b.dataset.t));const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Press Cmd/Ctrl+C'})}));</script>
+</body></html>
